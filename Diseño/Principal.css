@@ -1,0 +1,276 @@
+/* Estilos generales */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111827;
+    color: #ffffff; /* Blanco */
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff; /* Blanco */
+}
+
+/* Estilos del encabezado */
+header {
+    display: flex;
+    min-height: 70px;
+    background-color: #ffffff; /* Blanco */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* Estilo para el logo del carrito de compras */
+.cart-logo img {
+    height: 30px; /* Ajusta la altura del logo del carrito */
+}
+
+/* Estilos del carrito */
+#cart {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #ffffff; /* Blanco */
+    color: #000000; /* Negro */
+    box-shadow: #00000080;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#cart h2 {
+    text-align: center;
+}
+
+#cart-items {
+    margin-top: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.cart-item .item-details {
+    flex-grow: 1;
+}
+
+.cart-item .item-quantity {
+    margin-left: 10px;
+}
+
+/* Estilos de navegación */
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+/* Estilos de navegación */
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+    color: #000000; /* Negro */
+}
+
+/* Estilos responsivos */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+    nav {
+        padding: 10px 0;
+    }
+}
+
+/* Estilos del botón fijo */
+.fixed-button {
+    background-color: #ffffff; /* Blanco */
+    color: #111827; /* Gris oscuro */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fixed-button:hover {
+    background-color: #f0f0f0; /* Gris claro */
+}
+
+/* Asegura que el botón esté sobre los elementos de navegación */
+nav {
+    position: relative;
+}
+
+/* Alinea el botón a la derecha dentro del nav */
+.fixed-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+/* Estilos del botón y la lista desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    background-color: #ffffff; /* Blanco */
+    color: #111827; /* Gris oscuro */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff; /* Blanco */
+    min-width: 160px;
+    box-shadow: #00000033;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #000000; /* Negro */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f0f0f0; /* Gris claro */
+}
+
+/* Muestra la lista desplegable cuando se pasa el ratón sobre el botón */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilos del carrusel */
+.carousel-container {
+    margin-top: 20px; /* Espacio entre el encabezado y el carrusel */
+    overflow: hidden; /* Oculta el contenido que excede el contenedor */
+    width: 100%; /* Ancho completo del contenedor */
+}
+
+.carousel-slide {
+    display: none; /* Oculta todas las diapositivas por defecto */
+    width: 100%; /* Ancho completo de cada diapositiva */
+    position: relative; /* Posición relativa para alinear las descripciones */
+}
+
+.carousel-slide img {
+    display: block; /* Para que el margen automático funcione */
+    margin-left: auto; /* Margen automático a la izquierda */
+    margin-right: auto; /* Margen automático a la derecha */
+    width: 650px; /* Ancho completo de las imágenes */
+    height: 500px; /* Altura automática para mantener la proporción */
+}
+
+
+.carousel-slide .caption {
+    position: absolute; /* Posición absoluta para alinear la descripción */
+    bottom: 0; /* Alinea la descripción en la parte inferior */
+    left: 50%; /* Alinea la descripción en el lado izquierdo */
+    transform: translateX(-50%); /* Centra horizontalmente */
+    width: auto; /* Ancho automático */
+    padding: 10px; /* Espaciado interno */
+}
+
+
+/* Crear un contenedor adicional para la descripción y el valor de la imagen */
+.carousel-slide .caption-container {
+    padding: 10px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluir el relleno en el ancho total */
+}
+
+.carousel-slide .caption h3,
+.carousel-slide .caption p {
+    margin: 0; /* Elimina el margen superior e inferior */
+}
+
+/* Mostrar la diapositiva activa */
+.carousel-slide.active {
+    display: block; /* Muestra la diapositiva activa */
+}
+
+/* Estilos para los botones de navegación */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #00000080; /* Negro semi-transparente */
+    color: #ffffff; /* Blanco */
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Estilo específico para el texto "Contáctanos" */
+.contactanos-section h2 {
+    text-align: center; /* Centrar el texto */
+}
+
+
+/* Estilo del encabezado de las promociones */
+.promotions-heading {
+    text-align: center;
+    margin-top: 50px; /* Espaciado superior */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.contactanos-section {
+    text-align: center; /* Alineación del texto */
+    margin-top: 50px; /* Espaciado superior */
+}
+
+.contactanos-section ul {
+    list-style: none; /* Quita los estilos de la lista */
+    padding: 0; /* Elimina el relleno */
+}
+
+.contactanos-section li {
+    margin-bottom: 10px; /* Espaciado inferior entre elementos de la lista */
+}
+
+.chat-button {
+    background-color: #007bff; /* Color de fondo azul */
+    color: #ffffff; /* Color de texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Relleno */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.chat-button:hover {
+    background-color: #0056b3; /* Color de fondo azul oscuro al pasar el ratón */
+}
