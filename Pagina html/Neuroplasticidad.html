@@ -1,45 +1,130 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Diseño/Principal.css">
-    <title>Tienda Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../Diseño/Index.css">
+    <title>Neuroplasticidad</title>
+    <link rel="icon" href="..\Imagenes/Logo.jpeg" type="image/png">
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="Imagenes/Logo.png" alt="Logo X" class="logo-img">
-            <h2 class="x">X</h2>
-        </div>
-        <nav>
-            <a href="#" class="nav-link">Inicio</a>
-            <a href="#" class="nav-link">Sobre nosotros</a>
-            <a href="#" class="nav-link">Contacto</a>
-        </nav>
-        
-        <!-- Botón con lista de opciones -->
-        <div class="dropdown">
-            <button class="dropdown-button"> <img src="ruta/a/tu/imagen.png" alt="Logo Menú"> </button>
-            <div class="dropdown-content">
-                <a href="#">Block</a>
-                <a href="#">Inicio</a>
-                <a href="#">Información</a>
-                <a href="#">Dudas</a>
-                <a href="#">Misión</a>
+    <div class="announcement-bar">
+        <p>🧠 ¡Transforma tu mente con neuroplasticidad! Aprende cómo fortalecer tu cerebro. 🧠</p>
+    </div>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="..\Imagenes/Logo.jpeg" alt="Logo Neuroplasticidad" class="logo-img">
+                <h2 class="brand-name">Mente Flexible</h2>
+            </div>
+
+            <nav class="main-nav">
+                <a href="Index.html" class="nav-link">Inicio</a>
+                <a href="#" class="nav-link">Beneficios</a>
+                <a href="Neuroplasticidad.html" class="nav-link">Sobre nosotros</a>
+                <a href="#" class="nav-link">Contacto</a>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar artículos...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
             </div>
         </div>
     </header>
 
-    
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Descubre el poder de la Neuroplasticidad</h1>
+                <p>Entrena tu mente, mejora tu memoria y fortalece tu capacidad de aprendizaje.</p>
+                <button class="cta-button">Explorar más</button>
+            </div>
+        </section>
 
-    <!-- Agregar Google Maps -->
-    <div id="map"></div>
+        <section class="featured-benefits">
+            <h2 class="section-title">Beneficios de la Neuroplasticidad</h2>
+            <div class="benefit-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Mayor aprendizaje</h3>
+                    <p>Facilita la adquisición de nuevos conocimientos y habilidades.</p>
+                </div>
 
-    <script src="principal.js"></script>
-    <!-- Agregar el script para integrar Google Maps -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+                <div class="benefit-card">
+                    <i class="fas fa-memory"></i>
+                    <h3>Mejor memoria</h3>
+                    <p>Fortalece las conexiones neuronales para recordar información más rápido.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <i class="fas fa-running"></i>
+                    <h3>Mayor resistencia mental</h3>
+                    <p>Ayuda a superar traumas y adaptar la mente a nuevos desafíos.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <i class="fas fa-smile"></i>
+                    <h3>Bienestar emocional</h3>
+                    <p>Reduce el estrés y mejora el estado de ánimo a través de nuevos hábitos cerebrales.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2 class="section-title">Experiencias Reales</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>“Desde que practico ejercicios de neuroplasticidad, mi concentración ha mejorado increíblemente.”</p>
+                    <span>- Sofía R.</span>
+                </div>
+                <div class="testimonial">
+                    <p>“Me ayudó a recuperar habilidades cognitivas después de un accidente. Increíble.”</p>
+                    <span>- Marcos L.</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre Nosotros</h3>
+                <p>Nos especializamos en brindar información y ejercicios para mejorar la salud cerebral.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#">Beneficios</a></li>
+                    <li><a href="#">Ejercicios</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>📍 Dirección de nuestra oficina</p>
+                <p>📱 +123456789</p>
+                <p>✉️ contacto@neuroplasticidad.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Neuroplasticidad. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script src="../Js/Index.js"></script>
 </body>
 </html>
